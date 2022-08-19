@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEPET</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="sepet.css">
+</head>
+
+<body>
+  <nav class="navbar  navbar-expand-lg navbar-light  py-2" style="background: hsl(0,0%,43%);">
+
+    <div class="container-fluid">
+      <img src="image/logo1.png" width="150" height="100" alt="">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="search">
+            <input class="search-box" type="search" placeholder="Search..." aria-label="Search">
+            <button class="search-btn btn-outline-success," type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fas fa-home"></i></a>
+          </li>
+          <!--li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-heart"></i>Favori</a>
+              </li-->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+            <ul>
+              <li><a href="#" class="text-dark ">Giriş Yap</a></li>
+              <li><a href="#" class="text-dark ">Üye Ol</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="active" href="home.html"><i class="fas fa-shopping-cart "></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="assistantContainer vl-active">
+    <div class="assistantHeader">
+      <div class="assistantHeaderText">Kupon Kodunuz</div>
+      <div class="assistantMinimize">-</div>
+    </div>
+    <div class="assistantBody">
+      <div class="assistantBodyText">
+        Tüm İndirimlere Ek 150 TL’ye 30 TL, 250 TL’ye 50 TL, 400 TL’ye 125 TL İndirim
+        Fırsatını Yakala!</div>
+      <span class="vl-coupon-span">30 TL İndirim İçin</span>
+      <div class="assistantCodeArea">
+        <input type="text" value="KUPON30" id="couponCode" readonly="">
+      </div>
+      <span class="vl-coupon-span">50 TL İndirim İçin</span>
+      <div class="assistantCodeArea">
+        <input type="text" value="KUPON50" id="couponCode" readonly="">
+      </div>
+      <span class="vl-coupon-span">125 TL İndirim İçin</span>
+      <div class="assistantCodeArea">
+        <input type="text" value="KUPON125" id="couponCode" readonly="">
+      </div>
+      <button class="assistantCloseButton  ">Kapat </button>
+      <!--div class="assistantCloseButton" >Kapat</div-->
+    </div>
+  </div>
+  <section id="SEPETİM" class="pt-5 mt-5 container">
+    <h2 class="font-weight-bold pt-5">SEPETİM</h2>
+    <hr>
+  </section>
+  <section id="cart-container" class="container my-5">
+    <table widht="100%">
+      <thead>
+        <tr>
+          <td>remove</td>
+          <td>image</td>
+          <td>product</td>
+          <td>price</td>
+          <td>quantity</td>
+          <td>total</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href=""><i class="fas fa-trash-alt"></i></a>
+          </td>
+          <td><img src="./image/elbise/kadın elbise/kaön2.png" alt=""></td>
+          <td>
+            <h5>Mini Elbise Büzgülü Yırtmaçlı</h5>
+          </td>
+          <td>
+            <h5>269,99 TL</h5>
+          </td>
+          <td><input class="w-25 pl-1" value="1" type="number"></td>
+          <td>
+            <h5>269,99 TL</h5>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href=""><i class="fas fa-trash-alt"></i></a>
+          </td>
+          <td><img src="./image/ayakkabı/kadın ayakkabı/ayakkabı4.1.png" alt=""></td>
+          <td>
+            <h5>Bağcıklı Ayakkabı</h5>
+          </td>
+          <td>
+            <h5>139,99 TL</h5>
+          </td>
+          <td><input class="w-25 pl-1" value="1" type="number"></td>
+          <td>
+            <h5>139,99 TL</h5>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href=""><i class="fas fa-trash-alt"></i></a>
+          </td>
+          <td><img src="./image/gömlek/kadın gömlek/yesil6.png" alt=""></td>
+          <td>
+            <h5>Basic Gömlek Uzun Kollu </h5>
+          </td>
+          <td>
+            <h5>220,00 TL</h5>
+          </td>
+          <td><input class="w-25 pl-1" value="1" type="number"></td>
+          <td>
+            <h5>220,00 TL</h5>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <section id="cart-bottom" class="container my-3">
+    <div class="row">
+      <div class="kupon col-lg-6 col-md-6 col-12 mb-4">
+        <div>
+          <h5>KUPON KOD</h5>
+          <p>Kupon kodunu giriniz.</p>
+          <input type="text" placeholder="Kupon Kodu">
+          <button>Kuponu Uygula</button>
+        </div>
+      </div>
+      <div class="total col-lg-6 col-md-6 col-12  ">
+        <div>
+          <h5>tutar</h5>
+          <div class="d-flex justify-content-between">
+            <h6>Ürün toplam tutar</h6>
+            <p></p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>kargo dahil</h6>
+            <p></p>
+          </div>
+          
+          <div class="d-flex justify-content-between">
+              <h6>total</h6>
+               <p></p>
+          </div>
+          <button class="ml-auto">Siparişi tamamla</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-info">
+      <ul class="footer-info__items">
+        <li>
+          <div class="footer-info__first">
+            <img src="./image/icon/online-shopping.png" alt="" width="40" height="40">
+          </div>
+          <div class="footer-info__second">
+            <span class="footer-info__title">
+              Güvenli Alışveriş
+            </span>
+          </div>
+        </li>
+        <li class="footer-info__item">
+          <div class="footer-info__first">
+            <img src="./image/icon/shop.png" alt="" width="40" height="40">
+          </div>
+          <div class="footer-info__second">
+            <span class="footer-info__title">
+              Mağazada Değişim
+            </span>
+          </div>
+        </li>
+        <li class="footer-info__item">
+          <div class="footer-info__first">
+            <img src="./image/icon/pay.png" alt="" width="40" height="40">
+          </div>
+          <div class="footer-info__second">
+            <span class="footer-info__title">
+              Kapıda Ödeme
+            </span>
+          </div>
+        </li>
+        <li class="footer-info__item">
+          <div class="footer-info__first">
+            <img src="./image/icon/returns.png" alt="" width="40" height="40">
+          </div>
+          <div class="footer-info__second">
+            <span class="footer-info__title">
+              Ücretsiz İade
+            </span>
+          </div>
+        </li>
+        <li class="footer-info__item">
+          <div class="footer-info__first">
+            <img src="./image/icon/fast-delivery.png" alt="" width="40" height="40">
+          </div>
+          <div class="footer-info__second">
+            <span class="footer-info__title">
+              Hızlı Gönderi
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <footer id="home" class="mt-3 py-5">
+
+    <div class="row container mx-auto pt-5">
+
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-2">KURUMSAL/YARDIM</h5>
+        <ul class="test-uppercase list-unstyled">
+          <li><a href="#">Yaşama Saygı</a></li>
+          <li><a href="#">Kampanyalar</a></li>
+          <li><a href="#">Kapıda Ödeme İade Formu</a></li>
+          <li><a href="#">Sipariş Teslim ve İade Detayları</a></li>
+          <li><a href="#">Beden Rehberi</a></li>
+          <li><a href="#">Sipariş Takip</a></li>
+          <li><a href="#">Kişisel Verilerin Korunması</a></li>
+          <li><a href="#">Kapıda Ödeme İade Formu</a></li>
+        </ul>
+      </div>
+      <!--div class="footer-one col-lg-3 col-md-6 col-12">
+      <h5 class="pb-2">YARDIM</h5>
+      <ul class="test-uppercase list-unstyled">
+        <li><a href="#">İade Prosedürü</a></li>
+        <li><a href="#"></a>Beden Rehberi</li>
+        <li><a href="#">Sipariş Takip</a></li>
+        <li><a href="#">Kişisel Verilerin Korunması</a></li>
+        <li><a href="#"></a>Kapıda Ödeme İade Formu</li>
+      </ul>
+    </div-->
+      <div class="footer-one col-lg-3 col-md-6 col-12 ">
+        <h5 class="pb-2">KATAGORİLER</h5>
+        <ul class="test-uppercase list-unstyled">
+          <li><a href="#">GÖMLEK</a></li>
+          <li><a href="#">ETEK</a></li>
+          <li><a href="#">PANTOLON</a></li>
+          <li><a href="#">TİŞÖRT</a></li>
+          <li><a href="#">AYAKKABI</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-2">SOSYAL</h5>
+        <ul class="test-uppercase list-unstyled">
+          <li><a href="#"><i class="fab fa-instagram"></i> İNSTAGRAM</a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i>TWİTTER</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-2">İLETİŞİM</h5>
+        <div>
+          <h6 class="text-uppercase">ADRES</h6>
+          <p>KAYSERİ/MELİKGAZİ</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">MÜŞTERİ HİZMETLERİ</h6>
+          <p>(850)--- -- --</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">EMAİL</h6>
+          <p>123@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-paying mt-5">
+        <div class="footer-paying__wrapper">
+          <ul class="footer-paying__items">
+            <li class="footer-paying__item">
+              <img src="./image/icon/mastercard.png">
+            </li>
+            <li class="footer-paying__item pl-3">
+              <img src="./image/icon/visa.png" width="30" height="20">
+            </li>
+            <div class="footer-paying__title pl-3">
+              Güvenli Ödeme Sistemi Sunuyoruz.
+            </div>
+          </ul>
+          <div class="footer-paying__copyright">
+            <div class="footer-copyright">
+
+              © Copyright 2022 GİZEM.com
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!--div class="copyright mt-5">
+      <div class="row container mx-autp">
+
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+          <img src="" alt="">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+          <p>© Copyright 2021-2022 gizem.com</p>
+        </div-->
+      <!--div class="col-lg-4 col-md-6 col-12">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+      </div>
+    </div-->
+  </footer>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+    <script>
+      //**** assistant container****//
+      assistantContainer = document.querySelector("#assistantContainer")
+      assistantMinimize = document.querySelector("assistantMinimize");
+      assistantCloseButton.addEventListener('click', function () {
+        assistantContainer.classList.add('closed');
+      });
+    </script>
+
+</body>
+
+</html>
